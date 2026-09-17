@@ -72,7 +72,7 @@ $parsed = $lines | ForEach-Object {
     if ($f.Count -ge 8) {
         $code = $f[6].Trim().ToUpper()
         $country = if ($countryMap.ContainsKey($code)) { $countryMap[$code] } else { $code }
-        '{0}:{1}#{2}-{3}MB/s' -f $f[0].Trim(), $f[7].Trim(), $country, $f[5].Trim()
+        '{0}:{1}#{2}-{0}' -f $f[0].Trim(), $f[7].Trim(), $country
     }
 }
 
