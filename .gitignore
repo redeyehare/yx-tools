@@ -21,3 +21,12 @@ android/app/libs/
 android/.gradle/
 local.properties
 *.apk
+
+# Automation 临时生成文件（不提交）
+Automation/cloudflare_ips.txt
+Automation/result.csv
+Automation/test_result.csv
+Automation/Cloudflare.txt
+Automation/Cloudflare_ipv6.txt
+Automation/yx-config.json
+Automation/*.exe
